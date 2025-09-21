@@ -2,39 +2,66 @@
 <html>
 
 <head>
-    <title> My First Web Page</title>
+    <title> My Styled Web Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nothing+You+Could+Do&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <!-- full name, course, and about me section -->
-    <h1>Altynay Ayazbayeva</h1>
-    <h2>Web Technologies Frontend</h2>
-    <h3>About me</h3>
-    <p>I'm a second year student at AITU and I want to become a developer</p>
-    <img src="https://media.licdn.com/dms/image/v2/D4E03AQEX5lYElrvvAA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1713971579615?e=1760572800&v=beta&t=_Tez27BkTH_dFH_liLMhzc0kyv6RCJbz6Lp91eJJXBc"
-        alt="My photo">
-    <br>
-    <button>Click me</button>
-    <br>
-    <!-- ordered list of hobbies -->
-    <h2>Hobbies</h2>
-    <ol>
-        <li>Reading</li>
-        <li>Volleyball</li>
-        <li>Photography</li>
-    </ol>
-    <br>
-    <!-- website links -->
-    <h2>Favorite websites</h2>
-    <ul>
-        <li><a href="https://leetcode.com/">Leetcode</a></li>
-        <li><a href="https://www.netflix.com/kz/login?nextpage=https%3A%2F%2Fwww.netflix.com%2Fbrowse">Netflix</a></li>
-        <li><a href="https://www.youtube.com/">Youtube</a></li>
-    </ul>
-    <br>
-    <!-- simple schedule -->
-    <h3>Weekly Class Schedule</h3>
-    <table border="1">
+    <h1 class="greeting">Hello!</h1>
+    <nav>
+        <ul class="navigation-ul">
+            <li><a href="#aboutme">About me </a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#websites">Websites</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+        </ul>
+    </nav>
+
+    <div class="aboutme" id="aboutme">
+        <h1 id="name-heading">Altynay Ayazbayeva</h1>
+        <img src="https://media.licdn.com/dms/image/v2/D4E03AQEX5lYElrvvAA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1713971579615?e=1760572800&v=beta&t=_Tez27BkTH_dFH_liLMhzc0kyv6RCJbz6Lp91eJJXBc"
+            alt="My photo">
+        <h2>About me</h2>
+        <p>I'm a second year student at AITU and I want to become a full-stack developer. My favorite lnaguages are Java and Python </p>
+    </div>
+    <h2 id="hobbies">Hobbies</h2>
+    <div class="hobbies-container">
+        <div class="hobby" id="hobby1">
+            <div>Reading</div>
+            <img src="https://i.pinimg.com/736x/16/a5/1d/16a51d620a52525cc215005d0ba85077.jpg" 
+            alt="reading image"
+            class="hobby-image reading-image">
+
+        </div>
+        <div class="hobby" id="hobby2">
+            <div>Volleyball</div>
+            <img src="https://i.pinimg.com/736x/d9/18/d2/d918d2b1488a1ace7064cf292d0db2c7.jpg" alt="volleyball image"
+            class="hobby-image volleyball-image">
+        </div>
+        <div class="hobby" id="hobby3">
+            <div>Photography</div>
+            <img src="https://i.pinimg.com/1200x/5f/e2/70/5fe270e13c8e1b4058fb5ec3bcade833.jpg" alt="photography image"
+            class="hobby-image photography-image">
+
+        </div>
+    </div>
+
+    <h2 id="websites">Favorite websites</h2>
+    <div class="websites-container" id="websites">
+        <ul>
+            <li><a href="https://leetcode.com/">Leetcode</a></li>
+            <li><a href="https://www.netflix.com/kz/login?nextpage=https%3A%2F%2Fwww.netflix.com%2Fbrowse">Netflix</a>
+            </li>
+            <li><a href="https://www.youtube.com/">Youtube</a></li>
+        </ul>
+    </div>
+    <h2 id="schedule">Weekly Class Schedule</h2>
+    <table class="schedule-table" border="1">
         <tr>
             <th>Subject</th>
             <th>Day</th>
@@ -51,26 +78,17 @@
             <td>08:00</td>
         </tr>
         <tr>
-            <td>Finances</td>
+            <td>Introduction to Finance</td>
             <td>Tuesday</td>
             <td>18:00</td>
         </tr>
+        <tr>
+            <td>Analytical methods in CS</td>
+            <td>Monday</td>
+            <td>16:00</td>
+        </tr>
     </table>
-    <br>
-    <!-- emojis -->
-    <h3>My mood today</h3>
-    <p> happy 😀, excited 🤩, motivated 💪 </p>
-    <!-- form -->
-    <h3>Form</h3>
-    <form>
-        <label for="name">Name:</label><br>
-        <input type="text" id="name"><br><br>
-        <label for="email">Email:</label><br>
-        <input type="text" id="email"><br><br>
-        <label for="color">Favorite color:</label><br>
-        <input type="color" id="favcolor"><br><br>
-        <button>Submit</button>
-    </form>
+
 </body>
 
 </html>
