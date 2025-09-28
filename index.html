@@ -7,88 +7,176 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nothing+You+Could+Do&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
+
 </head>
 
 <body>
-    <h1 class="greeting">Hello!</h1>
-    <nav>
-        <ul class="navigation-ul">
-            <li><a href="#aboutme">About me </a></li>
-            <li><a href="#hobbies">Hobbies</a></li>
-            <li><a href="#websites">Websites</a></li>
-            <li><a href="#schedule">Schedule</a></li>
-        </ul>
-    </nav>
+    <div class="container">
+        <header class="nav-bar">
+            <a href="#" class="logo">
+                <img src="https://cdn-icons-png.flaticon.com/256/17296/17296450.png" alt=""></img>
+            </a>
+            <ul class="navigation-ul">
+                <li><a href="#aboutme">about me </a></li>
+                <li><a href="#gallery-heading">tech stack</a></li>
+                <li><a href="#shows">favorite shows</a></li>
+            </ul>
+        </header>
 
-    <div class="aboutme" id="aboutme">
-        <h1 id="name-heading">Altynay Ayazbayeva</h1>
-        <img src="https://media.licdn.com/dms/image/v2/D4E03AQEX5lYElrvvAA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1713971579615?e=1760572800&v=beta&t=_Tez27BkTH_dFH_liLMhzc0kyv6RCJbz6Lp91eJJXBc"
-            alt="My photo">
-        <h2>About me</h2>
-        <p>I'm a second year student at AITU and I want to become a full-stack developer. My favorite lnaguages are Java and Python </p>
+        <aside class="sidebar">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="#aboutme">about me</a></li>
+                <li><a href="#gallery-heading">tech stack</a></li>
+                <li><a href="#shows">favorite shows</a></li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <div class="portfolio-grid">
+                <div class="projects-area">
+
+                    <h1 id="shows">my favorite shows</h1>
+                    <div class="card-row">
+                        <div class="card">
+                            <img src="https://static0.srcdn.com/wordpress/wp-content/uploads/2020/03/house-md-featured.jpg"
+                                alt="">
+                            <div class="card-content">
+                                <h3>House M.D.</h3>
+                                <p><span>8.7 on IMDb</span>A medical drama about Dr. Gregory House, a brilliant but
+                                    unconventional doctor
+                                    who solves complex medical cases while struggling with his own flaws.</p>
+                                <button>
+                                    <a href="https://www.imdb.com/title/tt0412142/">View on IMDb</a>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://getwallpapers.com/wallpaper/full/6/c/6/436534.jpg" alt="">
+                            <div class="card-content">
+                                <h3>Prison Break</h3>
+                                <p><span>8.3 on IMDb</span>A thriller about two brothers; one is wrongly imprisoned, and
+                                    the
+                                    other creates a plan to break
+                                    him out, leading to high-stakes escapes and conspiracies.</p>
+                                <button>
+                                    <a href="https://www.imdb.com/title/tt0455275/?ref_=fn_all_ttl_1">View on IMDb</a>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://comicbook.com/wp-content/uploads/sites/4/2025/06/The-Wonderfully-Weird-World-of-Gumball-Hulu-Cartoon-Network-Wattersons.jpg"
+                                alt="">
+                            <div class="card-content">
+                                <h3>The Amazing World of Gumball</h3>
+                                <p><span>8.4 on IMDb</span>An animated comedy following Gumball Watterson, his family,
+                                    and
+                                    friends in the bizarre town of Elmore,
+                                    mixing surreal humor with everyday life.</p>
+                                <button>
+                                    <a
+                                        href="https://www.imdb.com/title/tt1942683/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_the%2520amazing%2520w">View
+                                        on IMDb</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h1 id="gallery-heading">tech stack</h1>
+                    <div class="gallery-container" id="gallery">
+
+                        <div class="gallery-item" id="gallery-item1">
+                            <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png"
+                                alt="Python">
+                            <div class="caption">Python</div>
+                        </div>
+                        <div class="gallery-item" id="gallery-item2">
+                            <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/181_Java_logo_logos-1024.png"
+                                alt="Java">
+                            <div class="caption">Java</div>
+
+                        </div>
+                        <div class="gallery-item" id="gallery-item3">
+                            <img src="https://static.vecteezy.com/system/resources/previews/027/127/463/non_2x/javascript-logo-javascript-icon-transparent-free-png.png"
+                                alt="JS">
+                            <div class="caption">JavaScript</div>
+                        </div>
+                        <div class="gallery-item" id="gallery-item4">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1067px-ISO_C%2B%2B_Logo.svg.png"
+                                alt="C++">
+                            <div class="caption">C++</div>
+                        </div>
+                        <div class="gallery-item" id="gallery-item5">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1163px-Postgresql_elephant.svg.png"
+                                alt="PostgreSQL">
+                            <div class="caption">PostgreSQL</div>
+                        </div>
+                        <div class="gallery-item" id="gallery-item6">
+                            <img src="https://images.seeklogo.com/logo-png/48/2/mongodb-logo-png_seeklogo-481256.png"
+                                alt="MongoDB">
+                            <div class="caption">MongoDB</div>
+                        </div>
+                        <div class="gallery-item" id="gallery-item7">
+                            <img src="https://cdn.worldvectorlogo.com/logos/spring-boot-1.svg" alt="SpringBoot">
+                        </div>
+                        <div class="caption">SpringBoot</div>
+
+                        <div class="gallery-item" id="gallery-item8">
+                            <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git">
+                            <div class="caption">Git</div>
+                        </div>
+                        <div class="gallery-item" id="gallery-item9">
+                            <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/postman-icon.png"
+                                alt="Postman">
+                            <div class="caption">Postman</div>
+                        </div>
+                        <img
+                            scr="https://www.citypng.com/public/uploads/preview/java-coffee-cup-white-logo-hd-png-701751694771824jfjoltog27.png">
+                    </div>
+                </div>
+
+                <div class="info-sidebar">
+                    <div class="contacts">
+                        <h1 id="contacts">contacts</h1>
+                        <ul class="links-list">
+                            <li><a href="https://github.com/AltynayA">GitHub</a></li>
+                            <li><a href="linkedin.com/in/altynayayazbayeva">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                    <div class="aboutme" id="aboutme">
+                        <h1 id="name-heading">Altynay Ayazbayeva</h1>
+                        <img src="https://media.licdn.com/dms/image/v2/D4E03AQEX5lYElrvvAA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1713971579615?e=1760572800&v=beta&t=_Tez27BkTH_dFH_liLMhzc0kyv6RCJbz6Lp91eJJXBc"
+                            alt="My photo">
+                        <h2>About me</h2>
+                        <p>I'm a second year student @AITU wanting to become a full-stack developer. My favorite
+                            languages
+                            are <span>Java</span>
+                            and <span>Python</span>. I also like reading and photography </p>
+                        <p>ദ്ദി ˉ͈̀꒳ˉ͈́ )✧</p>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <p>© 2025 Altynay Ayazbayeva</p>
+            <p>
+                <a href="mailto:altynayayazbayeva@gmail.com">Email</a> |
+                <a href="https://github.com/AltynayA">GitHub</a> |
+                <a href="linkedin.com/in/altynayayazbayeva">LinkedIn</a>
+            </p>
+        </footer>
     </div>
-    <h2 id="hobbies">Hobbies</h2>
-    <div class="hobbies-container">
-        <div class="hobby" id="hobby1">
-            <div>Reading</div>
-            <img src="https://i.pinimg.com/736x/16/a5/1d/16a51d620a52525cc215005d0ba85077.jpg" 
-            alt="reading image"
-            class="hobby-image reading-image">
 
-        </div>
-        <div class="hobby" id="hobby2">
-            <div>Volleyball</div>
-            <img src="https://i.pinimg.com/736x/d9/18/d2/d918d2b1488a1ace7064cf292d0db2c7.jpg" alt="volleyball image"
-            class="hobby-image volleyball-image">
-        </div>
-        <div class="hobby" id="hobby3">
-            <div>Photography</div>
-            <img src="https://i.pinimg.com/1200x/5f/e2/70/5fe270e13c8e1b4058fb5ec3bcade833.jpg" alt="photography image"
-            class="hobby-image photography-image">
 
-        </div>
+
+
+
     </div>
-
-    <h2 id="websites">Favorite websites</h2>
-    <div class="websites-container" id="websites">
-        <ul>
-            <li><a href="https://leetcode.com/">Leetcode</a></li>
-            <li><a href="https://www.netflix.com/kz/login?nextpage=https%3A%2F%2Fwww.netflix.com%2Fbrowse">Netflix</a>
-            </li>
-            <li><a href="https://www.youtube.com/">Youtube</a></li>
-        </ul>
-    </div>
-    <h2 id="schedule">Weekly Class Schedule</h2>
-    <table class="schedule-table" border="1">
-        <tr>
-            <th>Subject</th>
-            <th>Day</th>
-            <th>Time</th>
-        </tr>
-        <tr>
-            <td>Web Technologies</td>
-            <td>Wednesday</td>
-            <td>18:00</td>
-        </tr>
-        <tr>
-            <td>Operating Systems</td>
-            <td>Monday, Thursday</td>
-            <td>08:00</td>
-        </tr>
-        <tr>
-            <td>Introduction to Finance</td>
-            <td>Tuesday</td>
-            <td>18:00</td>
-        </tr>
-        <tr>
-            <td>Analytical methods in CS</td>
-            <td>Monday</td>
-            <td>16:00</td>
-        </tr>
-    </table>
-
 </body>
 
 </html>
